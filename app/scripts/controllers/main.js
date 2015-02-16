@@ -14,3 +14,32 @@ angular.module('firstVisionApp').controller('MainCtrl', function ($scope) {
 
 
   });
+
+
+/**
+ * Navigation Bar Controller
+ */
+angular.module('firstVisionApp').controller('NavCntrl', function ($scope) {
+
+  var tabCntrl = this;
+
+  tabCntrl.currentTabName = 'home';
+
+  /**
+   * Returns if tab is the currently selected tab.
+   * @param tab
+   * @returns {boolean}
+   */
+  tabCntrl.tabIsSelected = function (tab) {
+    return tabCntrl === tab;
+  };
+
+  /**
+   * Sets the current tab to setTab
+   * @param setTab
+   */
+  tabCntrl.setTab = function (setTab){
+    tabCntrl.tab = setTab;
+  };
+
+});
