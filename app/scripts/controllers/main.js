@@ -31,7 +31,7 @@ angular.module('firstVisionApp').controller('NavCntrl', function ($scope) {
    * @returns {boolean}
    */
   tabCntrl.tabIsSelected = function (tab) {
-    return tabCntrl === tab;
+    return tabCntrl.currentTabName === tab;
   };
 
   /**
@@ -39,7 +39,7 @@ angular.module('firstVisionApp').controller('NavCntrl', function ($scope) {
    * @param setTab
    */
   tabCntrl.setTab = function (setTab){
-    tabCntrl.tab = setTab;
+    tabCntrl.currentTabName = setTab;
   };
 
 });
