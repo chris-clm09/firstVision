@@ -160,6 +160,20 @@ Nav BAR
 
 
 
+/*----------------------------------------------------------------------------------
+ROWS
+----------------------------------------------------------------------------------*/
+.rowSpacing {
+  margin-top: 20px;
+}
+
+
+
+.divBorder {
+  border: 10px solid;
+  border-color: #888;
+}
+
 
 
 /* Custom page footer */
@@ -171,17 +185,6 @@ Nav BAR
 
 .container-narrow > hr {
   margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
 }
 
 /* Supporting marketing content */
