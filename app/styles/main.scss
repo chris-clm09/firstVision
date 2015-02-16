@@ -22,11 +22,6 @@ body {
   padding-right: 15px;
 }
 
-/* Center of the web page. */
-.content {
- margin-top: 50px;
-}
-
 /* Custom page header */
 .header {
   margin-bottom: 10px;
@@ -38,6 +33,33 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}
+
+
+/*----------------------------------------------------------------------------------
+TEXT
+----------------------------------------------------------------------------------*/
+.header1 {
+  color:#888888;
+  font-family:'ArialMT';
+  font-size:44px;
+}
+
+.header2 {
+  color:#555555;
+  font-family:'Arial-BoldMT';
+  font-size:16px;
+}
+.generalText {
+  color:#888888;
+  font-family:'ArialMT';
+  font-size:16px;
+}
+
+.clientQuote {
+  color:#888888;
+  font-family:'Arial-ItalicMT';
+  font-size:16px;
 }
 
 
@@ -60,11 +82,17 @@ Nav BAR
   padding: 0 8% 0 8%;
 }
 
+.navDark {
+  background-color: #333333;
+}
 
 // ---- Dark Theme ---- //
 .navbar-dark {
-  background-color: #333333;
-  border-color: #333333;
+  border-width: 0;
+  background: -webkit-linear-gradient(#333333, #333333 90%, rgba(51,51,51,0.5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#333333, #333333 90%,rgba(51,51,51,0.5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#333333, #333333 90%,rgba(51,51,51,0.5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#333333, #333333 90%,rgba(51,51,51,0.5)); /* Standard syntax */
 }
 .navbar-dark .navbar-nav > li > a {
   color: #888;
