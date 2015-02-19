@@ -66,6 +66,12 @@ TEXT
   font-family:'Arial-BoldMT';
   font-size:16px;
 }
+.copyRight {
+  text-align: center;
+  color:#ffffff;
+  font-family:'Arial-BoldMT';
+  font-size:16px;
+}
 
 /*----------------------------------------------------------------------------------
 Text Color
@@ -125,6 +131,25 @@ Nav BAR
 .navbar-dark .navbar-collapse,
 .navbar-dark .navbar-form {
   border-color: #ffffff;
+}
+
+
+/*----------------------------------------------------------------------------------
+Footer
+----------------------------------------------------------------------------------*/
+.socialBar {
+  margin-top: 20px;
+  float: right;
+  display: inline;
+}
+.socialList{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.socialList li{
+  display: inline;
 }
 
 
