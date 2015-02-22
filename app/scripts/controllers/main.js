@@ -19,7 +19,7 @@ angular.module('firstVisionApp').controller('MainCtrl', function ($scope) {
 /**
  * Navigation Bar Controller
  */
-angular.module('firstVisionApp').controller('NavCntrl', function ($scope) {
+angular.module('firstVisionApp').controller('NavCntrl', function () {
 
   var tabCntrl = this;
 
