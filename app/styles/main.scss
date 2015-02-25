@@ -40,6 +40,14 @@ body {
 /*----------------------------------------------------------------------------------
 Carosel Fun
 ----------------------------------------------------------------------------------*/
+.featureTextDiv {
+  max-width: 407px;
+  height: auto;
+  display: inline-block;
+}
+.featureText{
+  color: #ffffff;
+}
 .carouselImageDiv {
   height: auto;
   max-width: 853px;
