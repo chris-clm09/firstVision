@@ -40,17 +40,40 @@ body {
 /*----------------------------------------------------------------------------------
 Carosel Fun
 ----------------------------------------------------------------------------------*/
-.featureTextDiv {
-  max-width: 407px;
-  height: auto;
+.vcenter {
   display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.featureTextDiv {
+  padding: 0 10% 0 15%;
+}
+.featureTextHeader {
+  font-size: 44px;
+  font-weight: 700;
+}
+.featureTextDesc {
+  font-size: 16px;
 }
 .featureText{
   color: #ffffff;
 }
 .carouselImageDiv {
   height: auto;
-  max-width: 853px;
+  width: 100%;
+}
+.carouselImageGradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  background: -webkit-linear-gradient(left, #333333,  rgba(51,51,51,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #333333, rgba(51,51,51,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #333333, rgba(51,51,51,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #333333, rgba(51,51,51,0)); /* Standard syntax */
 }
 
 
@@ -284,6 +307,10 @@ ROWS
     max-width: 1280px;
   }
 
+  .containerFull {
+    width: 100%;
+  }
+
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -294,9 +321,5 @@ ROWS
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }
