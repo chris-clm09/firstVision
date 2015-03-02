@@ -83,6 +83,17 @@ Carosel Fun
 
 
 /*----------------------------------------------------------------------------------
+Portfolio Page
+----------------------------------------------------------------------------------*/
+.longWheel {
+  position: relative;
+  left: -51px;
+  top: -35px;
+}
+
+
+
+/*----------------------------------------------------------------------------------
 TEXT
 ----------------------------------------------------------------------------------*/
 .header1 {
@@ -201,19 +212,19 @@ Footer
 
 // ---- Light Theme ---- //
 .navbar-light {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
 }
 .navbar-light .navbar-nav > li > a {
   color: #888;
 }
 .navbar-light .navbar-nav > li > a:hover, .navbar-light .navbar-nav > li > a:focus {
   color: #333333;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 .navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active > a:hover, .navbar-light .navbar-nav > .active > a:focus {
   color: #333333;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 // Border of menu button on hover
 .navbar-light .navbar-toggle {
@@ -221,7 +232,7 @@ Footer
 }
 // Background of menu button on hover
 .navbar-light .navbar-toggle:hover, .navbar-light .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 // Menu button bar colors
 .navbar-light .navbar-toggle .icon-bar {

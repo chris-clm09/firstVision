@@ -7,12 +7,24 @@
  * # PortfolioCtrl
  * Controller of the firstVisionApp
  */
-angular.module('firstVisionApp')
-  .controller('PortfolioCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('firstVisionApp').controller('PortfolioCtrl', function ($scope)
+{
+  var portCtrl = this;
+
+
+  /*----------------------------------------------------------------------------------
+  Categories
+  ----------------------------------------------------------------------------------*/
+  portCtrl.videoCategories = ['All', 'Commercials', 'Cooperate', 'Television'];
+  portCtrl.currentCategory = 'All';
+
+  portCtrl.setCurrentCategory = function (category) { portCtrl.currentCategory = category;};
+  portCtrl.getCurrentCategory = function () { return portCtrl.currentCategory; };
+
+
+
+
+
+
+});
 

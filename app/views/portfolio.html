@@ -33,9 +33,6 @@
           </div>
 
         </div>
-
-
-
       </div>
 
         <!-- Left and right controls -->
@@ -50,11 +47,30 @@
 
       </div>
     </div>
-
-
   </div>
 </div>
 
+<div class="container" ng-controller="PortfolioCtrl as portCtrl">
+  <p style="padding-top: 40px;" class="header1">Portfolio</p>
 
+  <div class="longWheel">
+    <img src="images/longWheel.png" alt="wheel" style="max-width: 100%; height: auto; ">
+  </div>
 
-<p>This is the portfolio view.</p>
+  <!--Category Navigation Links-->
+  <div class="navbar-light" style="position: relative; top: -55px;">
+    <ul class="nav navbar-nav" style="cursor: pointer">
+
+      <li ng-class="{active: portCtrl.getCurrentCategory() === category}"
+          ng-click="portCtrl.setCurrentCategory(category)"
+          ng-repeat="category in portCtrl.videoCategories">
+
+        <a>{{category}}</a>
+
+      </li>
+
+    </ul>
+  </div>
+
+</div>
+
