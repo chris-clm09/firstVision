@@ -7,7 +7,7 @@
  * # FeaturedcarouselCtrl
  * Controller of the firstVisionApp
  */
-angular.module('firstVisionApp').controller('FeaturedCarouselCtrl', function ($scope) {
+angular.module('firstVisionApp').controller('FeaturedCarouselCtrl', function () {
 
   var ctrl = this;
 

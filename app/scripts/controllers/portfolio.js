@@ -7,7 +7,7 @@
  * # PortfolioCtrl
  * Controller of the firstVisionApp
  */
-angular.module('firstVisionApp').controller('PortfolioCtrl', function ($scope)
+angular.module('firstVisionApp').controller('PortfolioCtrl', function ()
 {
   var portCtrl = this;
 
