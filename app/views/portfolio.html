@@ -17,13 +17,13 @@
 
           <div ng-class="{item:true, active:$index===0}" ng-repeat="video in carouselCtrl.featuredVideos">
             <div class="row">
-              <div class="col-md-4 col-sm-4 vcenter">
+              <div class="col-md-4 col-sm-5 vcenter">
                 <div class="featureTextDiv">
                   <p class="featureText featureTextHeader">{{video.title}}</p>
                   <p class="featureText featureTextDesc">{{video.description}}</p>
                 </div>
               </div><!--
-           --><div class="col-md-8 col-sm-8 vcenter"><!--
+           --><div class="col-md-8 col-sm-7 vcenter"><!--
              --><div class="carouselImageDiv">
                   <img style="max-height: 480px; width: 100%;" ng-src="{{video.png}}" alt="featured video">
                 </div>
@@ -71,6 +71,16 @@
 
     </ul>
   </div>
+
+  <!--Video Layout-->
+  <div id='divVideos'>
+
+    <div class="vItem" style="height: 100px;  background-color: red"></div>
+    <div class="vItem" style="height: 100px;  background-color: blue"></div>
+    <div class="vItem" style="height: 100px;  background-color: #800080"></div>
+
+  </div>
+
 
 </div>
 

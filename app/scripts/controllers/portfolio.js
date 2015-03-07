@@ -13,6 +13,21 @@ angular.module('firstVisionApp').controller('PortfolioCtrl', function ()
 
 
   /*----------------------------------------------------------------------------------
+  Set up Iso
+  ----------------------------------------------------------------------------------*/
+  var divVideos = document.querySelector('#divVideos');
+  portCtrl.iso = new Isotope( divVideos, {
+    itemSelector: '.vItem',
+    layoutMode: 'cellsByRow',
+    cellsByRow: {
+      columnWidth: 350,
+      rowHeight: 217
+    }
+  });
+
+
+
+  /*----------------------------------------------------------------------------------
   Categories
   ----------------------------------------------------------------------------------*/
   portCtrl.videoCategories = ['All', 'Commercials', 'Cooperate', 'Television'];
@@ -26,5 +41,24 @@ angular.module('firstVisionApp').controller('PortfolioCtrl', function ()
 
 
 
+
+
 });
+
+
+
+
+/*----------------------------------------------------------------------------------
+Isotope Video Layout
+----------------------------------------------------------------------------------*/
+//var divVideos = $('#divVideos');
+//
+//console.log(Is);
+//
+//// init
+//divVideos.isotope({
+//  // options
+//  itemSelector: '.vitem',
+//  layoutMode: 'fitRows'
+//});
 
