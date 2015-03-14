@@ -11,22 +11,6 @@ angular.module('firstVisionApp').controller('PortfolioCtrl', function ()
 {
   var portCtrl = this;
 
-
-  /*----------------------------------------------------------------------------------
-  Set up Iso
-  ----------------------------------------------------------------------------------*/
-  var divVideos = document.querySelector('#divVideos');
-  portCtrl.iso = new Isotope( divVideos, {
-    itemSelector: '.vItem',
-    layoutMode: 'cellsByRow',
-    cellsByRow: {
-      columnWidth: 350,
-      rowHeight: 217
-    }
-  });
-
-
-
   /*----------------------------------------------------------------------------------
   Categories
   ----------------------------------------------------------------------------------*/
@@ -36,11 +20,38 @@ angular.module('firstVisionApp').controller('PortfolioCtrl', function ()
   portCtrl.setCurrentCategory = function (category) { portCtrl.currentCategory = category;};
   portCtrl.getCurrentCategory = function () { return portCtrl.currentCategory; };
 
-
-
-
-
-
+  portCtrl.videos = [
+    {
+      png: 'images/scenery.jpg',
+      videoId: '12309849102',
+      title: 'Scenery Beautiful'
+    },
+    {
+      png: 'images/scenery.jpg',
+      videoId: '12309849102',
+      title: 'Scenery Beautiful'
+    },
+    {
+      png: 'images/scenery.jpg',
+      videoId: '12309849102',
+      title: 'Scenery Beautiful'
+    },
+    {
+      png: 'images/scenery.jpg',
+      videoId: '12309849102',
+      title: 'Scenery Beautiful'
+    },
+    {
+      png: 'images/scenery.jpg',
+      videoId: '12309849102',
+      title: 'Scenery Beautiful'
+    },
+    {
+      png: 'images/scenery.jpg',
+      videoId: '12309849102',
+      title: 'Scenery Beautiful'
+    }
+  ];
 
 
 });

@@ -1,3 +1,7 @@
+$screen-xs: 480px;
+$screen-sm: 750px;
+$screen-md: 960px;
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -90,7 +94,13 @@ Portfolio Page
   left: -51px;
   top: -35px;
 }
-.vItem { width: 241px; }
+.vItem {
+  width: 241px;
+}
+.vItem > p {
+  padding-top: 10px;
+  text-align: center;
+}
 
 
 

@@ -51,34 +51,36 @@
 </div>
 
 <div class="container" ng-controller="PortfolioCtrl as portCtrl">
-  <p style="padding-top: 40px;" class="header1">Portfolio</p>
 
-  <div class="longWheel">
-    <img src="images/longWheel.png" alt="wheel" style="max-width: 100%; height: auto; ">
-  </div>
+  <div>
+    <p style="padding-top: 40px;" class="header1">Portfolio</p>
 
-  <!--Category Navigation Links-->
-  <div class="navbar-light" style="position: relative; top: -55px;">
-    <ul class="nav navbar-nav" style="cursor: pointer">
+    <div class="longWheel">
+      <img src="images/longWheel.png" alt="wheel" style="max-width: 100%; height: auto; ">
+    </div>
 
-      <li ng-class="{active: portCtrl.getCurrentCategory() === category}"
-          ng-click="portCtrl.setCurrentCategory(category)"
-          ng-repeat="category in portCtrl.videoCategories">
-
-        <a>{{category}}</a>
-
-      </li>
-
-    </ul>
+    <!--Category Navigation Links-->
+    <div class="navbar-light" style="position: relative; top: -55px;">
+      <ul class="nav navbar-nav" style="cursor: pointer; padding-bottom: 0px">
+        <li ng-class="{active: portCtrl.getCurrentCategory() === category}"
+            ng-click="portCtrl.setCurrentCategory(category)"
+            ng-repeat="category in portCtrl.videoCategories">
+          <a>{{category}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <!--Video Layout-->
-  <div id='divVideos'>
-
-    <div class="vItem" style="height: 100px;  background-color: red"></div>
-    <div class="vItem" style="height: 100px;  background-color: blue"></div>
-    <div class="vItem" style="height: 100px;  background-color: #800080"></div>
-
+  <div style="clear:both; position: relative; top:-30px">
+    <div class="row">
+      <div class=" col-md-4 col-sm-6 col-xs-12" ng-repeat="video in portCtrl.videos">
+        <div class="vItem" style="margin-left: auto;margin-right: auto;width: 100%;margin-top: 30px">
+          <img ng-src="{{video.png}}" style="height: 134px; width: 241px; display: table-caption; margin: 0 auto;">
+          <p class="header2">{{video.title}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 
 
